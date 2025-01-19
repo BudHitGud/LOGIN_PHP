@@ -9,6 +9,8 @@
 
 <?php
 
+
+
     try {
         $base = new PDO("mysql:host=localhost; dbname=sesionprivada", "root", "");
         $base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -37,6 +39,11 @@
         $numregistro = $resultado->rowCount();
 
         if ($numregistro != 0) {
+            
+            session_start();
+            $_SESSION["usuario"] = $_POST["InputMail"];
+            
+            
             // Redirigir a la página de éxito (ejemplo)
             header("Location: bienvenida.php"); 
             exit(); // Importante: Detener la ejecución del script después de la redirección
