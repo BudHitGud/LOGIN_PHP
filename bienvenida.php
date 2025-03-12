@@ -18,5 +18,6 @@
     
     echo"<h1>PAGINA PRIVADA<h1>";
     echo"<p>Bienvenido</p>";
+	echo"<p> Colaborando BudHitGud y XRJAM </p>"
 
 ?>
