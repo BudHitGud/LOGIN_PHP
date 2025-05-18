@@ -18,7 +18,11 @@
     
     echo"<h1>PAGINA PRIVADA<h1>";
     echo"<p>Bienvenido</p>";
+
     
-   echo "<p><a href='cerrar_sesion.php'>Cerrar Sesion</a></p>"
+   echo "<p><a href='cerrar_sesion.php'>Cerrar Sesion</a></p>";
+
+	echo"<p> Colaborando BudHitGud y XRJAm </p>";
+
 
 ?>
