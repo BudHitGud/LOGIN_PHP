@@ -12,7 +12,7 @@
 
 
     try {
-        $base = new PDO("mysql:host=localhost; dbname=LoginPHP", "root", "");
+        $base = new PDO("mysql:host=localhost; dbname=sesionprivada", "root", "");
         $base->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         echo "Connected to database successfully!";
 
@@ -24,7 +24,7 @@
         echo $mail . "|" . $pass;
         
         //CREAR LA CONSULTA MODELO CON PLACEHOLDERS
-        $sql = "SELECT * FROM UsuariosRegistrados WHERE Email = :M_Mail AND Password = :M_Pass";
+        $sql = "SELECT * FROM registrousuarios WHERE Email = :M_Mail AND Password = :M_Pass";
         $resultado = $base->prepare($sql);
         
 
